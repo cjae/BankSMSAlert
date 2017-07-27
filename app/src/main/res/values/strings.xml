@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SMSAlert</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="available_accounts">Available Accounts</string>
+    <string name="proceed">Proceed</string>
+    <string name="please_select_1_account">Please select 1 account</string>
+    <string name="account_logo">Bank Logo</string>
+    <string name="title_activity_alert_amount">AlertAmountActivity</string>
+</resources>

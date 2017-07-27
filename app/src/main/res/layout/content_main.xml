@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.android.cjae.smsalert.feature.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:id="@+id/bank_info_container"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:layout_marginTop="16dp"
+            android:text="@string/available_accounts"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/bank_account_instruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="@string/please_select_1_account"
+            android:textColor="@color/text_color"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/bank_list_vw"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"/>
+
+        <Button
+            android:id="@+id/bank_proceed_btn"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="@color/app_white"
+            android:textSize="16sp"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:text="@string/proceed" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
