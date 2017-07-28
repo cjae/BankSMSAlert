@@ -282,7 +282,6 @@ public class MainActivity extends AppCompatActivity implements
             }
 
             doProcessBanks(bankList);
-            cursor.close();
         } else {
             showMsgError();
         }

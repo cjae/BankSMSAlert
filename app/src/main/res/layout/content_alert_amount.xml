@@ -1,11 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.android.cjae.smsalert.feature.AlertAmountActivity"
     tools:showIn="@layout/activity_alert_amount">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:layout_marginTop="5dp"
+        app:cardBackgroundColor="@color/app_white"
+        app:cardCornerRadius="@dimen/cardview_default_radius"
+        app:cardElevation="@dimen/cardview_default_elevation">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:background="?android:selectableItemBackground"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:textAlignment="gravity"
+                android:text="@string/credit_balance"/>
+
+            <TextView
+                android:id="@+id/credit_amount_vw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="15dp"
+                android:gravity="center"
+                android:textAlignment="gravity"
+                android:textSize="35sp"
+                android:text="@string/u20a61_000_000"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/app_white"
+        app:cardCornerRadius="@dimen/cardview_default_radius"
+        app:cardElevation="@dimen/cardview_default_elevation">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:background="?android:selectableItemBackground"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:textAlignment="gravity"
+                android:text="@string/dedit_balance"/>
+
+            <TextView
+                android:id="@+id/debit_amount_vw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="15dp"
+                android:gravity="center"
+                android:textAlignment="gravity"
+                android:textSize="35sp"
+                android:text="@string/u20a61_000_000"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
